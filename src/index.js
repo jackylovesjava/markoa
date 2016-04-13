@@ -6,12 +6,13 @@ import koaBunyanLogger from 'koa-bunyan-logger';
 // Import defined routes
 import {router} from './routes';
 import lasso from 'lasso';
-import {devConfig, prodConfig} from '../config';
+import {devConfig, prodConfig, config} from '../config';
 
 // Config Lasso for building up the static resources
 if (__DEV_MODE__) {
   lasso.configure(devConfig);
   require('../config/browser-refresh-config').enable();
+  require('../db/install.js');
 } else {
   lasso.configure(prodConfig);
 }

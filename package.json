@@ -24,12 +24,8 @@
     "Template engine",
     "starter kit"
   ],
-  "author": "Leon Li <lilei.leon@gmail.com>",
+  "author": "Jim Liu <jimliu@baobaoj.com>",
   "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/leonli/lkm-starter/issues"
-  },
-  "homepage": "https://github.com/leonli/lkm-starter",
   "dependencies": {
     "babel-core": "^6.0.20",
     "babel-polyfill": "^6.0.16",
@@ -46,7 +42,9 @@
     "koa-static": "^1.5.1",
     "lasso": "^1.12.1",
     "lasso-less": "^2.1.2",
-    "marko": "^2.7.28"
+    "marko": "^2.7.28",
+    "sequelize": "3.21.0",
+    "mysql": "^2.5.4"
   },
   "devDependencies": {
     "babel-eslint": "^4.1.3",
