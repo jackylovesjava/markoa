@@ -2,6 +2,7 @@
     "dependencies": [
         "../styles/welcome.less",
         "require-run: ../client/welcome.js",
-        "require-run: ../client/somethingNew.es6"
+        "require-run: ../client/somethingNew.es6",
+        "require-run: jquery"
     ]
 }
