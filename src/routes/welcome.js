@@ -9,7 +9,7 @@ const yourName = () => new Promise(resolve => {
   setTimeout(() => resolve('Someone else'), 1000);
 });
 
-export function * welcome(next) {
+export function *welcome(next) {
   let count = this.session.count || 0;
   this.log.debug('Current user session count would be %s', count);
   this.body = welcomeTemplate.stream({getName, yourName, count});

@@ -14,7 +14,7 @@ for (var name in schema) {
 /**
  * 创建表
  */
-sequelize.sync({force: false}).then(function (err) {
+sequelize.sync({force: true}).then(function (err) {
     if (err) {
         console.log('Unable to connect to the database:', err);
     } else {

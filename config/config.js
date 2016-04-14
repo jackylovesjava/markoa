@@ -13,12 +13,12 @@ var config = {
      */
     development: {
         database: {
-            dbname: 'bokeh',
-            username: 'bokeh_user',
-            password: 'coms3dev',
+            dbname: 'jimliu',
+            username: 'jimliu',
+            password: 'jimliu',
             connection: {
                 dialect: "mysql",
-                host: '192.168.10.85',
+                host: '112.124.7.87',
                 port: 3306,
                 logging: false
             }
