@@ -10,10 +10,14 @@ exports.Sessions = {
 
 exports.Users = {
     uuid: {type: Sequelize.UUID, defaultValue: Sequelize.UUIDV4},
-    first_name: {type: Sequelize.STRING(32), allowNull: true},
-    last_name: {type: Sequelize.STRING(32), allowNull: true},
+    user_name: {type: Sequelize.STRING(32), allowNull: true},
+    password: {type: Sequelize.STRING(32), allowNull: true},
+    qq: {type: Sequelize.STRING(15), allowNull: true, unique: true},
+    phone_number: {type: Sequelize.STRING(15), allowNull: true, unique: true},
     email: {type: Sequelize.STRING(50), allowNull: true, unique: true},
-    image: {type: Sequelize.STRING(191), allowNull: true},
-    last_seen: {type: Sequelize.DATE, defaultValue: Sequelize.NOW},
-    last_login: {type: Sequelize.DATE, defaultValue: Sequelize.NOW}
+    alipay_account_number: {type: Sequelize.STRING(50), allowNull: true},
+    alipay_account_name: {type: Sequelize.STRING(50), allowNull: true},
+    invite_user_id: {type: Sequelize.INTEGER, references: 'Users', referencesKey: 'id', allowNull: false},
+    fan_number: {type: Sequelize.INTEGER, defaultValue: 0},
+    register_date: {type: Sequelize.DATE, defaultValue: Sequelize.NOW}
 };
