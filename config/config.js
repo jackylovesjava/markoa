@@ -18,7 +18,7 @@ var config = {
             password: 'jimliu',
             connection: {
                 dialect: "mysql",
-                host: '112.124.7.87',
+                host: '127.0.0.1',
                 port: 3306,
                 logging: false
             }
