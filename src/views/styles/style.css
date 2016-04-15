@@ -1,0 +1,445 @@
+.w1000 {
+	width:1000px;
+	margin:0 auto;
+}
+
+.container {
+    width: 1000px;
+}
+
+.home-page {
+	width: 100%;
+}
+
+.header {
+	height: 90px;
+	width: 100%;
+}
+
+.header .logo {
+	float: left;
+	padding:10px 0 0 0;
+}
+
+.header .logo a {
+	display: inline-block;
+	width: 350px;
+	height: 70px;
+	background: url("../images/logo.png") center center no-repeat;
+}
+
+.top-contact {
+	padding:20px;
+}
+
+.top-contact .inner{
+	float: right;
+	height: 50px;
+	font-size: 26px;
+	padding-left: 60px;
+	line-height: 55px;
+	background: url("../images/call.png") left center no-repeat;
+}
+
+.flash {
+	width:100%;
+	height: 420px;
+	background:url("../images/flash_bg.png") center center;
+	background-size: cover;
+}
+
+
+.flash .inner{
+	height: 420px;
+}
+
+.flash .words{
+	cursor: pointer;
+	width:354px;
+	height: 198px;
+	position: absolute;
+	top:20px;
+	left:200px;
+	z-index: 3;
+	background:url("../images/2_word.png") center bottom no-repeat;
+}
+
+.flash .bottom{
+	width:100%;
+	height: 420px;
+	position: absolute;
+	bottom:0;
+	z-index: 2;
+	background:url("../images/2_bottom.png") center bottom no-repeat;
+}
+
+.advantage, .security, .users, .joinus {
+	padding-top: 30px;
+}
+
+.home-title {
+	width: 100%;
+	height: 60px;
+	position: relative;
+}
+
+.home-title .line{
+	width: 100%;
+	height: 2px;
+	background-color: #ddd;
+	position: absolute;
+	margin-top: 25px;
+	z-index: -1;
+}
+
+.home-title .title{
+	display: inline-block;
+	height: 60px;
+	font-size: 30px;
+	background-color: #fff;
+	padding:5px 20px;
+}
+
+.login-box {
+	position: absolute;
+    top: 40px;
+    right: 0;
+    width: 300px;
+    z-index: 6;
+    height: 320px;
+    background: url("../images/login-wrap-bg.png") no-repeat 0 0;
+    color: #fff;
+    z-index: 5;
+}
+
+.login-box .inner {
+	padding:10px 30px;
+}
+
+.login-box .inner .title{
+	font-size: 18px;
+	padding:10px 0 15px 0;
+	text-align: center;
+}
+
+.login-box .login-input {
+	margin-bottom: 20px;
+}
+
+.login-box .login-input span {
+	position: absolute;
+	margin:6px 0 0 7px;
+	display: inline-block;
+	width: 25px;
+	height: 25px;
+	background-repeat: no-repeat;
+}
+
+.login-box .login-input span.user {
+	background-image: url("../images/user.png");
+}
+
+.login-box .login-input span.password {
+	background-image: url("../images/lock.png");
+	margin-top: 8px;
+}
+
+.login-box .login-input input {
+	width: 100%;
+	height: 40px;
+	color: #333333;
+    background-color: #ffffff;
+    border: 1px solid #e8e8e8;
+    padding-left:40px;
+}
+
+.advantage-list {
+	overflow: hidden;
+	text-align: center;
+}
+
+.advantage-list ul {
+	width: 1100px;
+}
+
+.advantage-list ul li {
+	width: 266px;
+	margin-top: 20px;
+	margin-right: 100px;
+	float:left;
+}
+
+.advantage-list ul li .img {
+	display: inline-block;
+	width: 80px;
+	height: 80px;
+	background-position: center center;
+	background-repeat: no-repeat;
+}
+
+.advantage-list ul li .img.adv1 {
+	background-image: url("../images/advantage01.png");
+}
+
+.advantage-list ul li .img.adv2 {
+	background-image: url("../images/advantage02.png");
+}
+
+.advantage-list ul li .img.adv3 {
+	background-image: url("../images/advantage03.png");
+}
+
+.advantage-list ul li .img.adv4 {
+	background-image: url("../images/advantage04.png");
+}
+
+.advantage-list ul li .img.adv5 {
+	background-image: url("../images/advantage05.png");
+}
+
+.advantage-list ul li .img.adv6 {
+	background-image: url("../images/advantage06.png");
+}
+
+.advantage-list ul li .title {
+	font-size: 18px;
+	line-height: 25px;
+}
+
+.advantage-list ul li .desc {
+	font-size: 14px;
+	color:#888;
+}
+
+
+.security {
+	margin:30px 0 10px 0;
+	background-color: #edf4f5;
+    padding: 80px 0px;
+}
+
+.security > .inner {
+	height: 225px;
+	background: url("../images/security100.png") 20px center no-repeat;
+}
+
+.security-info {
+	padding:0px 0 0 320px;
+}
+
+.security-info h4{
+	color:#00ACC7;
+    padding-top: 20px;
+    padding-bottom: 8px;
+    font-size: 33px;
+    line-height: 45px;
+}
+
+.security-info ul li {
+    list-style: square;
+    margin-left: 20px;
+    font-size:16px;
+    line-height: 24px;
+    padding:2px;
+}
+
+
+.users-list {
+	overflow: hidden;
+	text-align: center;
+}
+
+.users-list ul {
+	width: 1040px;
+}
+
+.users-list ul li {
+	background: #eee;
+    width: 227px;
+    height: 274px;
+    padding: 35px;
+    float: left;
+    margin-right: 30px;
+    border-bottom: 2px solid #ccc;
+}
+
+.users-list ul li .photo {
+	display: inline-block;
+	width: 80px;
+	height: 80px;
+	background-position: center center;
+	background-repeat: no-repeat;
+}
+
+.users-list ul li .photo.user1 {
+	background-image: url("../images/photo1.png");
+}
+
+.users-list ul li .photo.user2 {
+	background-image: url("../images/photo2.png");
+}
+
+.users-list ul li .photo.user3 {
+	background-image: url("../images/photo3.png");
+}
+
+.users-list ul li .photo.user4 {
+	background-image: url("../images/photo4.png");
+}
+
+.users-list ul li .name {
+	font-size: 18px;
+	line-height: 25px;
+	padding:5px 0 15px 0;
+}
+
+.users-list ul li .message {
+	font-size: 14px;
+	color:#888;
+}
+
+.joinus {
+	margin:40px 0 5px 0;
+    background-color: #f1f1f1;
+    padding: 60px 0px 40px;
+}
+
+.joinus .join-title {
+	font-size: 42px;
+	font-weight: bold;
+}
+
+.joinus .join-btn {
+	padding:35px 0 0 0;
+}
+
+.joinus .join-btn a {
+	background-color: #CC0033;
+    color: #fff;
+    font-size: 45px;
+    text-decoration: none;
+    width: 440px;
+    height: 100px;
+    display: block;
+    text-align: center;
+    line-height: 100px;
+    margin: 0px auto;
+}
+
+.joinus .join-btn a:hover {
+	background-color: #FB0845;
+}
+
+.joinus .join-step {
+	margin-top: 20px;
+	width: 100%;
+	height: 200px;
+	background: url("../images/step.png") center center no-repeat;
+}
+
+.footer {
+	color: #ddd;
+    padding: 25px 0;
+    background: #222a3d;
+    text-align: center;
+    line-height: 25px;
+}
+
+
+
+
+/*** Sign Up ***/
+.signup .inner {
+  padding:30px 50px 40px;
+}
+
+.signup-wrap {
+	width: 600px;
+	margin:0 auto;
+	padding: 20px 0 50px 0;
+}
+
+.signup-wrap .top-tips {
+	font-size: 14px;
+	border-bottom: 1px solid #ccc;
+	padding:5px 0 10px 0;
+	margin-bottom: 15px;
+}
+
+.signup-wrap .top-tips span{
+	color:#f00;
+}
+
+.signup-line {
+  width: 100%;
+  height: 45px;
+  line-height: 45px;
+  margin-bottom: 8px;
+  font-size: 16px;
+}
+
+.signup-line label{
+  display: inline-block;
+  width: 100px;
+  text-align: center;
+
+}
+
+.signup-line span{
+  color:#f00;
+  padding:0 5px;
+  font-size: 16px;
+}
+
+.signup-line input.normal{
+  display: inline-block;
+  width: 400px;
+  height: 40px;
+  border:1px solid #aaa;
+  padding:0 4px;
+}
+
+.signup-line input.phone{
+  display: inline-block;
+  width: 200px;
+  height: 40px;
+  border:1px solid #aaa;
+  padding:0 4px;
+}
+
+.signup-line input.code{
+  display: inline-block;
+  width: 100px;
+  height: 40px;
+  border:1px solid #aaa;
+  padding:0 4px;
+}
+
+.signup-line .send{
+  width: 100px;
+  height: 40px;
+  border:1px solid #B16101;
+  background-color: #DC7A04;
+  color:#fff;
+}
+
+.signup-line .send:hover{
+  opacity: 0.9;
+}
+
+.signup-btns {
+	text-align: center;
+	padding:30px 0 0 0;
+}
+
+.signup-btns .signup{
+  width: 150px;
+  height: 50px;
+  border:1px solid #C61E02;
+  background-color: #E42000;
+  color:#fff;
+}
+
+.signup-btns .signup:hover{
+  opacity: 0.9;
+}
