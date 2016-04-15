@@ -1,0 +1,7 @@
+{
+    "dependencies": [
+        "../../styles/base.css",
+        "../../styles/style.css",
+        "require-run: jquery"
+    ]
+}
