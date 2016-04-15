@@ -6,7 +6,7 @@ var Sequelize = require("sequelize");
 exports.Sessions = {
     sid: {type: Sequelize.STRING(100), allowNull: false, unique: true},
     data: {type: Sequelize.TEXT}
-}
+};
 
 exports.Users = {
     uuid: {type: Sequelize.UUID, defaultValue: Sequelize.UUIDV4},

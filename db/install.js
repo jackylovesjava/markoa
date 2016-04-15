@@ -16,7 +16,7 @@ for (var name in schema) {
  */
 sequelize.sync({force: true}).then(function (err) {
     if (err) {
-        console.log('Unable to connect to the database:', err);
+        //console.log('Unable to connect to the database:', err);
     } else {
         console.log('Connection has been established successfully.');
     }

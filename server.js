@@ -1,4 +1,6 @@
-require('babel-core/register');
+require('babel-core/register')({
+    presets: ['es2015-node5', 'stage-3']
+});
 require('babel-polyfill');
 
 // Setup the node evnironment to global application context

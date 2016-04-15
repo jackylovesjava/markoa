@@ -2,6 +2,7 @@ import koa from 'koa';
 import serve from 'koa-static';
 import compress from 'koa-compress';
 import session from 'koa-generic-session';
+import convert from 'koa-convert';
 import koaBunyanLogger from 'koa-bunyan-logger';
 // Import defined routes
 import {router} from './routes';
@@ -18,23 +19,23 @@ if (__DEV_MODE__) {
 }
 
 // Init the Koa application
-const app = koa();
+const app = new koa();
 // Init the koa logger
-app.use(koaBunyanLogger({
+app.use(convert(koaBunyanLogger({
   name: 'markoa',
   level: __DEV_MODE__ ? 'debug' : 'info'
-}));
+})));
 if (__DEV_MODE__) {
   app.use(require('koa-logger')());
 } else {
-  app.use(koaBunyanLogger.requestLogger());
+  app.use(convert(koaBunyanLogger.requestLogger()));
 }
 // Init the session midleware, we will use memory store in development mode
 app.keys = ['markoa-4mjsd67D9s'];
-app.use(session({
+app.use(convert(session({
   key: 'markoa.sid',
   prefix: 'markoa:sess:'
-}));
+})));
 // TODO prodction session store
 
 // Init the compress midleware
@@ -58,4 +59,4 @@ if (__DEV_MODE__) {
   }
 }
 
-console.info(`==> 🍻  Server now is listening on port ${__PORT__}`);
+console.info(`==> Server now is listening on port ${__PORT__}`);

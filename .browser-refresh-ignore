@@ -1,0 +1,6 @@
+.gitignore
+.idea
+*.marko.js
+static
+.cache
+.git

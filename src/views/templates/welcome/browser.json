@@ -1,0 +1,6 @@
+{
+    "dependencies": [
+        "require-run: ../../client/somethingNew.es6",
+        "require-run: jquery"
+    ]
+}
