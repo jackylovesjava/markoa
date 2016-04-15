@@ -6,17 +6,20 @@
     <title>This is the title</title>
     <lasso-head/>
 </head>
+<body>
 
     <h1 id="header" class="hello">This is a playground sample...</h1>
 
     <h3>Your current session count would be: ${data.count}</h3>
     <h3>Below is an image from Css background</h3>
     <div class="signImg">
+      <async-fragment data-provider="${data.getName}" client-reorder="true" var="myName">
           <span class="whatName">My name is ${myName}</span>
       </async-fragment>
     </div>
 
     <div class="signImg">
+      <async-fragment data-provider="${data.getName}" client-reorder="true" var="yourName">
           <span class="whatName">Your name is [${yourName}]</span>
       </async-fragment>
     </div>
@@ -26,6 +29,7 @@
 
     <lasso-body/>
 
+    <browser-refresh enabled="false" />
     <async-fragments/>
 
 </body>
